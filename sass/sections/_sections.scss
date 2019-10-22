@@ -1,0 +1,82 @@
+.section {
+  padding: 50px;
+
+  &__header {
+    margin-bottom: 10px;
+    font-family: $font-montserrat;
+    font-size: $large-font-size;
+    font-weight: 700;
+    color: #222222;
+    letter-spacing: -1px;
+    line-height: 75px;
+    text-transform: uppercase;
+  }
+
+  &__header-paragraph {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-family: $font-droid;
+    font-size: $medium-font-size;
+    font-weight: 400;
+    font-style: italic;
+    color: $color-grey;
+  }
+
+  &__content {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__paragraph {
+    color: $color-grey;
+    font-size: $small-font-size;
+    font-weight: 300;
+
+    &--title {
+      margin: 0;
+      font-family: $font-montserrat;
+      font-size: $normal-font-size;
+      font-weight: 700;
+      color: #222222;
+      line-height: 75px;
+      letter-spacing: 0px;
+    }
+
+    &--description {
+      margin-top: 0;
+      font-family: $font-roboto;
+      font-size: $small-font-size;
+      color: $color-grey;
+      letter-spacing: 0px;
+    }
+  }
+
+  &__card {
+
+    img {
+      width: 75px;
+      height: 75px;
+    }
+
+    &--margin {
+      margin: 0;
+      padding: 0 40px;
+      background: $color-white;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .section {
+    padding: 20px 10px;
+
+    &__paragraph {
+      &--description {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

@@ -588,6 +588,42 @@ nav .container ul li a {
   text-decoration: none;
 }
 
+@media (max-width: 992px) {
+  nav {
+    height: auto;
+  }
+  nav img {
+    padding-top: 10px;
+  }
+  nav label {
+    margin: 0;
+    font-size: 35px;
+    color: #ffffff;
+    display: block;
+    position: absolute;
+    top: 5;
+    right: 10px;
+  }
+  nav ul li {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  nav ul li a {
+    text-align: center;
+    line-height: 40px;
+  }
+  #menu-button:not(:checked) ~ ul {
+    display: none;
+  }
+  #menu-button:checked ~ ul {
+    display: block;
+  }
+  #menu-button:checked ~ ul li {
+    width: 100%;
+  }
+}
+
 * {
   box-sizing: border-box;
 }

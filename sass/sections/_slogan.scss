@@ -1,0 +1,43 @@
+.slogan {
+  height: 80vh;
+  background-image: url(../images/background_image.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  &__welcome {
+    margin: 0;
+    padding-top: 80px;
+    font-family: $font-droid;
+    font-size: $large-font-size;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: -1px;
+    color: $color-white;
+  }
+
+  &__header {
+    margin: 20px 0 40px;
+    font-family: $font-montserrat;
+    font-size: $extra-lagre-font-size;
+    font-weight: 700;
+    letter-spacing: -2px;
+    color: $color-white;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 992px) {
+  .slogan {
+    &__welcome {
+      font-size: $medium-font-size;
+    }
+
+    &__header {
+      font-size: 30px;
+    }
+  }
+}

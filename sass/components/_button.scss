@@ -1,0 +1,18 @@
+.button {
+  margin: 10px;
+  min-width: 240px;
+  height: 65px;
+  background: $color-gold;
+  color: $color-white;
+  font-family: $font-montserrat;
+  font-size: $normal-font-size;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-black;
+  }
+}

@@ -625,7 +625,7 @@ nav .container ul li a {
 }
 
 .slogan {
-  height: 100vh;
+  height: 80vh;
   background-image: url(../images/background_image.png);
   background-size: cover;
   background-position: center;
@@ -641,6 +641,7 @@ nav .container ul li a {
 
 .slogan__welcome {
   margin: 0;
+  padding-top: 80px;
   font-family: "Droid Serif", serif;
   font-size: 40px;
   font-weight: 700;
@@ -650,7 +651,7 @@ nav .container ul li a {
 }
 
 .slogan__header {
-  margin: 25px 0;
+  margin: 20px 0 40px;
   font-family: "Montserrat", sans-serif;
   font-size: 75px;
   font-weight: 700;
@@ -666,6 +667,25 @@ nav .container ul li a {
   .slogan__header {
     font-size: 30px;
   }
+}
+
+.button {
+  margin: 10px;
+  min-width: 240px;
+  height: 65px;
+  background: #fed136;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #000000;
 }
 
 * {

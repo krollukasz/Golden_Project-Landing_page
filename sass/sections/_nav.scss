@@ -11,14 +11,11 @@ nav {
   }
 
   .container {
-    .text-logo {
-      font-family: $font-montserrat;
-      font-size: $bigger-font-size;
-      color: $color-gold;
-      letter-spacing: 1px;
-      line-height: 41px;
-      display: flex;
-      justify-content: flex-start; 
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      padding-left: 20px;
     }
 
     ul {
@@ -26,7 +23,7 @@ nav {
       list-style-type: none;
 
       li {
-        padding: 0 8px;
+        padding: 0 12px;
         color: $color-white;
         border-bottom: 3px solid transparent;
         display: inline-block;
@@ -64,7 +61,7 @@ nav {
       color: $color-white;
       display: block;
       position: absolute;
-      top: 5;
+      top: 5px;
       right: 10px;
     }
 
@@ -91,6 +88,7 @@ nav {
 
     li {
       width: 100%;
+      background-color: #5e5e5e;
     }
   }
 }

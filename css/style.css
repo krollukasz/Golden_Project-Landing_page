@@ -536,6 +536,106 @@ template {
   }
 }
 
+.aboutUs__content {
+  margin: 80px 0 100px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.aboutUs__content--left {
+  text-align: right;
+}
+
+.aboutUs__content--right {
+  text-align: left;
+}
+
+.aboutUs__header {
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #222222;
+  letter-spacing: 0px;
+}
+
+.aboutUs__description {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+  letter-spacing: 0px;
+}
+
+.aboutUs__image {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutUs__image--left {
+  margin-left: 50px;
+  padding-left: 30px;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.aboutUs__image--center {
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.aboutUs__image--right {
+  padding-right: 56px;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
+@media (max-width: 992px) {
+  .section {
+    padding: 20px 10px;
+  }
+  .section__paragraph--description {
+    margin-bottom: 30px;
+  }
+  .section .aboutUs__description {
+    padding: 0 10px;
+  }
+  .section .aboutUs__content {
+    margin: 50px 0 60px;
+  }
+  .section .aboutUs__content--left, .section .aboutUs__content--right {
+    text-align: center;
+  }
+  .section .aboutUs__content--left {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+  }
+  .section .aboutUs__header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .section .aboutUs__image {
+    margin: 0;
+    padding: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+
 nav {
   margin: 0;
   width: 100%;

@@ -6,10 +6,17 @@
     font-family: $font-montserrat;
     font-size: $large-font-size;
     font-weight: 700;
-    color: $color-dark;
     letter-spacing: -1px;
     line-height: 75px;
     text-transform: uppercase;
+
+    &--white {
+      color: $color-white;
+    }
+
+    &--black {
+      color: $color-black;
+    }
   }
 
   &__header-paragraph {
@@ -56,6 +63,12 @@
     &--stretch {
       margin: 50px 10px 10px;
       justify-content: space-around;
+    }
+
+    &--columns {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
     }
   }
 
@@ -124,6 +137,13 @@
       width: 220px;
       height: 220px;
     }
+  }
+
+  &--black {
+    background-image: url(../images/map_image.png);
+    background-color: $color-black;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 

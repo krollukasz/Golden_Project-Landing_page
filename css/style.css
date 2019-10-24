@@ -804,10 +804,17 @@ nav .container ul li a {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 700;
-  color: #222222;
   letter-spacing: -1px;
   line-height: 75px;
   text-transform: uppercase;
+}
+
+.section__header--white {
+  color: #ffffff;
+}
+
+.section__header--black {
+  color: #000000;
 }
 
 .section__header-paragraph {
@@ -859,6 +866,15 @@ nav .container ul li a {
   margin: 50px 10px 10px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.section__content--columns, .section-team__content--columns {
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .section__paragraph {
@@ -919,6 +935,13 @@ nav .container ul li a {
   height: 220px;
 }
 
+.section--black {
+  background-image: url(../images/map_image.png);
+  background-color: #000000;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 992px) {
   .section {
     padding: 20px 10px;
@@ -948,6 +971,84 @@ nav .container ul li a {
 
 .button:hover {
   color: #000000;
+}
+
+.form {
+  padding: 0 15px;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 20px;
+}
+
+.form__input {
+  margin: 9px 0;
+  padding: 0 0 5px 10px;
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+  color: #777777;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+}
+
+.form__input:-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #bbbbbb;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.form__input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #bbbbbb;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.form .form-group {
+  width: 100%;
+  height: auto;
+}
+
+.form .form-group .form-control {
+  padding: 3px 0 0 10px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+}
+
+.form .form-group .form-control:-ms-input-placeholder {
+  padding-top: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #bbbbbb;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.form .form-group .form-control::placeholder {
+  padding-top: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #bbbbbb;
+  letter-spacing: 0px;
+  text-transform: uppercase;
 }
 
 .social-icons-bar {

@@ -855,6 +855,12 @@ nav .container ul li a {
       align-items: center;
 }
 
+.section__content--stretch, .section-team__content--stretch {
+  margin: 50px 10px 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .section__paragraph {
   color: #777777;
   font-size: 14px;
@@ -916,6 +922,9 @@ nav .container ul li a {
 @media (max-width: 992px) {
   .section {
     padding: 20px 10px;
+  }
+  .section__content .logo {
+    padding: 20px;
   }
   .section__paragraph--description {
     margin-bottom: 30px;

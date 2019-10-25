@@ -145,6 +145,45 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  &--footer {
+    padding: 0;
+  
+
+    &__content {
+      margin: 0;
+    }
+
+    &__copyrights { 
+      display: flex;
+      align-items: center;
+    }
+
+    &__row {
+      display: flex;
+      justify-content: flex-start;
+
+      &--left {
+        padding: 0 10px 0 40px;
+        display: flex;
+        justify-content: flex-start;
+
+        .copyright {
+          font-family: $font-montserrat;
+          font-size: $small-font-size;
+          color: #555555;
+          line-height: 22px;
+          letter-spacing: 0px;
+        }
+      }
+
+      &--right {
+        padding: 0 10px 0 100px;
+        display: flex;
+        justify-content: flex-start;
+      }  
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -160,6 +199,15 @@
     &__paragraph {
       &--description {
         margin-bottom: 30px;
+      }
+    }
+
+    &--footer__row {
+      &--left,
+      &--right {
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
       }
     }
   }

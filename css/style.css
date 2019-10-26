@@ -640,8 +640,7 @@ nav {
   margin: 0;
   width: 100%;
   height: 80px;
-  position: fixed;
-  z-index: 999;
+  position: absolute;
 }
 
 nav input,
